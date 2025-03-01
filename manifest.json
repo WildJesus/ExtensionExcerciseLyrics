@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "My First Extension",
+    "name": "Music Lyrics Finder",
     "version": "1.0",
-    "description": "A simple Chrome extension example with a popup and content script.",
+    "description": "Detects if a YouTube video is music and searches for its lyrics on Google.",
     "action": {
       "default_popup": "popup.html",
       "default_icon": {
@@ -18,8 +18,15 @@
         "run_at": "document_end"
       }
     ],
+    "background": {
+      "service_worker": "background.js"
+    },
     "permissions": [
-      "scripting"
+      "scripting",
+      "storage"
+    ],
+    "host_permissions": [
+      "https://www.google.com/*"
     ]
   }
   
