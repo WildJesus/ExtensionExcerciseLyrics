@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Youtube Lyrics lookup",
+    "version": "1.0",
+    "description": "Excercise Extension to pull up lyrics for a youtube song",
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icons/map_red_icon.png",
+        "48": "icons/map_red_icon.png",
+        "128": "icons/map_red_icon.png"
+      }
+    },
+    "permissions": []
+  }
+  
