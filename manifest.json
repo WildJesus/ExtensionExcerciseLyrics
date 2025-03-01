@@ -1,16 +1,22 @@
 {
     "manifest_version": 3,
-    "name": "Youtube Lyrics lookup",
+    "name": "My First Extension",
     "version": "1.0",
-    "description": "Excercise Extension to pull up lyrics for a youtube song",
+    "description": "A simple Chrome extension example with a popup and content script.",
     "action": {
       "default_popup": "popup.html",
       "default_icon": {
-        "16": "icons/map_red_icon.png",
-        "48": "icons/map_red_icon.png",
-        "128": "icons/map_red_icon.png"
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
       }
     },
+    "content_scripts": [
+      {
+        "matches": ["https://www.youtube.com/watch*"],
+        "js": ["content.js"],
+        "run_at": "document_end"
+      }
+    ],
     "permissions": []
   }
-  
