@@ -6,3 +6,5 @@ Just trying to create a basic Extension that will
     does google search with that name + lyrics
     pulls the lyrics
     displays it on demand 
+
+To try this Extension download all the files -> go to chrome -> Extensions chrome://extensions/ -> load unpacked -> navigate to the folder -> click the extension in the extension bar -> select auto display lyrics :)
